@@ -20,7 +20,7 @@ public class TC003 extends BaseTest
 	
 	
 	@Test(dataProvider="getData")
-	public void addProductToCartFromExcelDuplicate(String productId, String size, String color)
+	public void addProductToCartFromExcel(String productId, String size, String color)
 	{
 		productId=Generic.removeDecimal(productId);
 		HomePage home = new HomePage(driver, webActionUtil);
